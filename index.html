@@ -1,129 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Fuentes que se ven 
 
         Be Vietnam 500
         Be Vietnam 700
     -->
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Contenedor Padre del Header/barra de navegacion -->
 
+    <header role="banner" class="contenedor-padre-nav-header" >
+      <!-- DIV para el logotipo de la barra de navegación -->
 
+      <div class="nav-header-logo">
+        <a
+          id="nav-skip-to-main-content"
+          role="button"
+          href="#root-app"
+          class="nav-skip-to-main-content"
+          aria-label="saltar al contenido"
+        ></a>
+        <a class="nav-logotipo" href="index.html"></a>
+      </div>
 
-
-
-
-
-
-
+      <nav class="navbar">
+        <a href="Sports">Sports</a>
+        <a href="Products">Products</a>
+        <a href="About Us">About us</a>
+        <a href="Trainning">Trainning</a>
+        <a href="Community">Community</a>
+      </nav>
+    </header>
     <main>
+      <!--------- Parte del jugador ¿Portada? --------->
 
-        <!--------- Parte del jugador ¿Portada? --------->
+      <section>
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <article>
+          <!-- Contenedor interno de la sección, donde está la img y el texto -->
+          <img src="img/padel-intro.png" />
+          <div>
+            <!-- Contenedor de los elementos de texto -->
+            <!-- No estoy 100% si realmente este corresponde a un h1-->
+            <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+            <p>
+              The final Open of the 2022 World Padel Tour season is underway,
+              don't miss out on any of the action!
+            </p>
+            <button>Contact</button>
+          </div>
+        </article>
+      </section>
 
-        <section> <!-- Contenedor general (que llega a los bordes de la pantalla)-->
-            <article> <!-- Contenedor interno de la sección, donde está la img y el texto -->
-                <img src="img/padel-intro.png">
-                <div><!-- Contenedor de los elementos de texto -->
-                    <!-- No estoy 100% si realmente este corresponde a un h1-->
-                    <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-                    <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-                    <button>Contact</button>
-                </div>
-            </article>
-        </section>
+      <!---------- Banner intermedio ---------->
 
+      <section>
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <h2>What's different between pros?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          aliquet consequat purus sit amet sodales. In faucibus ut nisi eu
+          dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.
+        </p>
+      </section>
 
-        <!---------- Banner intermedio ---------->
-        
-        <section> <!-- Contenedor general (que llega a los bordes de la pantalla)-->
-            <h2>What's different between pros?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
-        </section>
+      <!---------- Sección de triple cuadros ---------->
 
-
-        <!---------- Sección de triple cuadros ----------> 
-
-        <section> <!-- Contenedor general (que llega a los bordes de la pantalla)-->
-            <article> <!-- Contenedor de los 2 primeros cuadros -->
-                <div> <!-- Contenedor de 1 cuadro -->
-                    <div> <!-- Contenedor del titulo con el número -->
-                        <label class="number-label">01</label>
-                        <label>Track Company-wide progress</label>
-                    </div>
-                    <p>
-                        Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
-                    </p>
-                </div>
-                <div>
-                    <div>
-                        <label class="number-label">02</label>
-                        <label>Advance built-in reports</label>
-                    </div>
-                    <p>
-                        Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
-                    </p>
-                </div>
-            </article>
-
-            <article> <!-- Contenedor del 3er cuadro -->
-                <div>
-                    <label class="number-label">03</label>
-                    <label>Everything you need in one place</label>
-                </div>
-                <p>
-                    Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
-                </p>
-            </article>
-        </section>
-
-
-        <!---------- Best of the Month ---------->
-
-        <section> <!-- Contenedor general (que llega a los bordes de la pantalla)-->
-            <h2>Best of the Month</h2>
-            <div> <!-- Contenedor general de los 3 cuadros -->
-                <article> <!-- Contenedor de cada cuadro -->
-                    <img class="avatar-img" src="img/avatar-sanyo.png">
-                    <h3>Sanyo</h3>
-                    <p>
-                        Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    </p>
-                </article>
-                <article>
-                    <img class="avatar-img" src="img/avatar.lebron.png">
-                    <h3>Lebron</h3>
-                    <p>
-                        Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    </p>
-                </article>
-                <article>
-                    <img class="avatar-img" src="img/avatar-navarro.png">
-                    <h3>Navarro</h3>
-                    <p>
-                        Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    </p>
-                </article>
+      <section>
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <article>
+          <!-- Contenedor de los 2 primeros cuadros -->
+          <div>
+            <!-- Contenedor de 1 cuadro -->
+            <div>
+              <!-- Contenedor del titulo con el número -->
+              <label class="number-label">01</label>
+              <label>Track Company-wide progress</label>
             </div>
-            <button>More</button>
-        </section>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
+          <div>
+            <div>
+              <label class="number-label">02</label>
+              <label>Advance built-in reports</label>
+            </div>
+            <p>
+              Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+              Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+              nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
+          </div>
+        </article>
 
+        <article>
+          <!-- Contenedor del 3er cuadro -->
+          <div>
+            <label class="number-label">03</label>
+            <label>Everything you need in one place</label>
+          </div>
+          <p>
+            Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+            Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+            nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+          </p>
+        </article>
+      </section>
 
-        <!---------- Banner final ---------->
+      <!---------- Best of the Month ---------->
 
-        <section>
-            <h2>Get to know the best teams of the year</h2>
-            <button>Go for it</button>
-        </section>
+      <section>
+        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <h2>Best of the Month</h2>
+        <div>
+          <!-- Contenedor general de los 3 cuadros -->
+          <article>
+            <!-- Contenedor de cada cuadro -->
+            <img class="avatar-img" src="img/avatar-sanyo.png" />
+            <h3>Sanyo</h3>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article>
+            <img class="avatar-img" src="img/avatar.lebron.png" />
+            <h3>Lebron</h3>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article>
+            <img class="avatar-img" src="img/avatar-navarro.png" />
+            <h3>Navarro</h3>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+        </div>
+        <button>More</button>
+      </section>
+
+      <!---------- Banner final ---------->
+
+      <section>
+        <h2>Get to know the best teams of the year</h2>
+        <button>Go for it</button>
+      </section>
     </main>
-
-
-
-
-
-
-</body>
+  </body>
 </html>
