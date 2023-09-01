@@ -1,13 +1,16 @@
+/* Importación de fuentes*/ 
+
 @font-face {
     font-family: 'Be Vietnam 700'; 
-    src: url('be-vietnam/BeVietnam-Bold.woff') format('woff');
+    src: url('../be-vietnam/BeVietnam-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Be Vietnam 500'; 
-    src: url('be-vietnam/BeVietnam-Medium.woff') format('woff'); 
+    src: url('../be-vietnam/BeVietnam-Medium.woff') format('woff'); 
 }
 
+/* Configuración universal */
 
 * {
     box-sizing: border-box;
@@ -50,6 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0 100px 0;
 }
 
 .portada-container img {
@@ -63,7 +67,7 @@
     align-items: flex-end;
     max-width: 450px;
     height: 399px;
-    margin-left:50px;
+    margin-left:90px;
 }
 
 h1,  .portada-text-container p{
@@ -94,6 +98,28 @@ h1 {
 
 /* Sección Banner intermedio */
 
+.midbanner-container {
+    background-color: #8B48BF;
+    color: white;
+    height:168px;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midbanner-container h2 {
+    max-width: 450px;
+    margin: 0 50px;
+    font-family: "Be Vietnam 700";
+    font-size: 36px;
+    line-height: 41px;
+}
+
+.midbanner-container p {
+    max-width: 450px;
+    margin: 0 50px;
+}
 
 /* Seccion Best of the Month*/
 
