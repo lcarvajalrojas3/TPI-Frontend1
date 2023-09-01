@@ -26,6 +26,42 @@
     position: static;
 }
 
+/* Portada */
+
+.portada-container {
+    display: flex;
+    justify-content: center;
+}
+
+.portada-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1,  .portada-text-container p{
+    text-align: right;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.portada-text-container p{
+    font-size: 16px;
+}
+
+.portada-text-container button {
+    color: white;
+    background-color: #8B48BF;
+    border: 0;
+    border-radius: 50px;
+}
+
+
 /* Seccion Best of the Month*/
 
 .avatar-img {
