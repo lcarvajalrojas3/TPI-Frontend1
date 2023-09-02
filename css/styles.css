@@ -178,3 +178,31 @@ padding-left: 92px;
     height: 70px;
     border-radius: 35px;
 }
+
+/* Final Banner section */
+
+.final-banner-section {
+    background-color: #8B48BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 224px;
+    color: white;
+
+}
+
+.final-banner-section h2 {
+    font-family: "Be Vietnam 700";
+    font-size: 40px;
+    letter-spacing: -0.2px;
+}
+
+.final-banner-section button {
+    background-color: white;
+    color:#8B48BF;
+    border: 0;
+    border-radius: 50px;
+    font-family: 13px;
+    width: 134px;
+    height: 44px;
+}
