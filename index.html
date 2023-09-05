@@ -10,6 +10,7 @@
         Be Vietnam 700
     -->
     <link rel="stylesheet" href="css/styles.css" />
+
   </head>
   <body>
     <!-- Contenedor Padre del Header/barra de navegacion -->
@@ -37,14 +38,17 @@
       </nav>
     </header>
     <main>
+
+
+
       <!--------- Parte del jugador ¿Portada? --------->
 
       <section>
         <!-- Contenedor general (que llega a los bordes de la pantalla)-->
-        <article>
+        <article class="portada-container">
           <!-- Contenedor interno de la sección, donde está la img y el texto -->
           <img src="img/padel-intro.png" />
-          <div>
+          <div class="portada-text-container">
             <!-- Contenedor de los elementos de texto -->
             <!-- No estoy 100% si realmente este corresponde a un h1-->
             <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
@@ -59,7 +63,7 @@
 
       <!---------- Banner intermedio ---------->
 
-      <section>
+      <section class="midbanner-container">
         <!-- Contenedor general (que llega a los bordes de la pantalla)-->
         <h2>What's different between pros?</h2>
         <p>
@@ -71,16 +75,15 @@
 
       <!---------- Sección de triple cuadros ---------->
 
-      <section>
-        <!-- Contenedor general (que llega a los bordes de la pantalla)-->
-        <article>
-          <!-- Contenedor de los 2 primeros cuadros -->
-          <div>
-            <!-- Contenedor de 1 cuadro -->
+      <section class="trescuadros-section">
+      <!-- Contenedor general (que llega a los bordes de la pantalla)-->
+        <article class="trescuadros-container">
+        <!-- Contenedor de los 2 primeros cuadros -->
+          <div class="cuadro-container">
+          <!-- Contenedor de 1 cuadro -->
             <div>
-              <!-- Contenedor del titulo con el número -->
-              <label class="number-label">01</label>
-              <label>Track Company-wide progress</label>
+            <!-- Contenedor del titulo con el número -->
+              <label class="number-label">01</label><label class="titulo-cuadro">Track Company-wide progress</label>
             </div>
             <p>
               Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
@@ -88,10 +91,9 @@
               nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
             </p>
           </div>
-          <div>
+          <div class="cuadro-container">
             <div>
-              <label class="number-label">02</label>
-              <label>Advance built-in reports</label>
+              <label class="number-label">02</label><label class="titulo-cuadro">Advance built-in reports</label>
             </div>
             <p>
               Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
@@ -101,28 +103,29 @@
           </div>
         </article>
 
-        <article>
-          <!-- Contenedor del 3er cuadro -->
-          <div>
-            <label class="number-label">03</label>
-            <label>Everything you need in one place</label>
+        <article class="trescuadros-container">
+        <!-- Contenedor del 3er cuadro -->
+          <div class="cuadro-container">
+            <div>
+                <label class="number-label">03</label><label class="titulo-cuadro">Everything you need in one place</label>
+            </div>
+            <p>
+                Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
+                Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
+                nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
+            </p>
           </div>
-          <p>
-            Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
-            Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
-            nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
-          </p>
         </article>
       </section>
 
       <!---------- Best of the Month ---------->
 
-      <section>
+      <section class="bestofmont-section">
         <!-- Contenedor general (que llega a los bordes de la pantalla)-->
         <h2>Best of the Month</h2>
-        <div>
+        <div class="bestofmont-container">
           <!-- Contenedor general de los 3 cuadros -->
-          <article>
+          <article class="bestofmont-card">
             <!-- Contenedor de cada cuadro -->
             <img class="avatar-img" src="img/avatar-sanyo.png" />
             <h3>Sanyo</h3>
@@ -132,7 +135,7 @@
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
           </article>
-          <article>
+          <article class="bestofmont-card">
             <img class="avatar-img" src="img/avatar.lebron.png" />
             <h3>Lebron</h3>
             <p>
@@ -141,7 +144,7 @@
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
           </article>
-          <article>
+          <article class="bestofmont-card">
             <img class="avatar-img" src="img/avatar-navarro.png" />
             <h3>Navarro</h3>
             <p>
@@ -156,10 +159,16 @@
 
       <!---------- Banner final ---------->
 
-      <section>
-        <h2>Get to know the best teams of the year</h2>
-        <button>Go for it</button>
+      <section class="final-banner-section">
+        <div class="final-banner-container">
+          <h2>Get to know the best teams of the year</h2>
+          <button>Go for it</button>
+        </div>
       </section>
+
+
+
+
     </main>
   </body>
 </html>

@@ -1,4 +1,25 @@
-/*añadimos contexto al contenedor padre*/
+/* Importación de fuentes*/ 
+
+@font-face {
+    font-family: 'Be Vietnam 700'; 
+    src: url('../be-vietnam/BeVietnam-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Be Vietnam 500'; 
+    src: url('../be-vietnam/BeVietnam-Medium.woff') format('woff'); 
+}
+
+/* Configuración universal */
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Be Vietnam 500", sans-serif;
+}
+
+/*hacemos Flex al contenedor padre*/
 
 .contenedor-padre-nav-header {
   display: flex;
@@ -13,10 +34,199 @@
 }
 
 
+/* Portada */
+
+.portada-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px 0;
+}
+
+.portada-container img {
+    max-width: 540px;
+}
+
+.portada-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 450px;
+    height: 399px;
+    margin-left:90px;
+}
+
+h1,  .portada-text-container p{
+    text-align: right;
+    margin:0;
+    padding:0;
+    font-family: "Be Vietnam 700", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.portada-text-container p{
+    font-size: 16px;
+}
+
+.portada-text-container button {
+    color: white;
+    background-color: #8B48BF;
+    border: 0;
+    border-radius: 50px;
+    padding:10px;
+    font-size: 13px;
+    width: 134px;
+    height: 44px
+}
+
+/* Sección Banner intermedio */
+
+.midbanner-container {
+    background-color: #8B48BF;
+    color: white;
+    height:168px;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midbanner-container h2 {
+    max-width: 450px;
+    margin: 0 50px;
+    font-family: "Be Vietnam 700";
+    font-size: 36px;
+    line-height: 41px;
+}
+
+.midbanner-container p {
+    max-width: 450px;
+    margin: 0 50px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Seccion triple-cuadros */
+
+.trescuadros-section {
+    background-color: #FAFAFA;
+    padding: 40px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 428px;
+}
+
+.trescuadros-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 162px;
+}
+
+.cuadro-container{
+    max-width: 530px;
+}
+
+.number-label {
+    display:inline-block;
+    text-align: center;
+    background-color: #8B48BF;
+    border-radius: 30px;
+    font-family: "Be Vietnam 700";
+    line-height: 43px;
+    height: 43px;
+    width: 69px;
+    color: white;
+    margin-right:23px;
+}
+
+.titulo-cuadro{
+    color: #323851;
+    font-family: "Be Vietnam 700";
+    letter-spacing: -0.24px;
+}
+
+.cuadro-container p {
+letter-spacing: -0.163px;
+color: #B3B2B7;
+padding-left: 92px;
+}
+
+
 /* Seccion Best of the Month*/
 
+.bestofmont-section {
+    padding: 80px;
+}
+
+.bestofmont-section h2 {
+    font-size: 39px;
+    font-family: "Be Vietnam 700";
+    text-align: center;
+    margin: 60px 0 60px 0;
+}
+
+.bestofmont-container {
+    display: flex;
+}
+
+.bestofmont-card {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    padding: 21px;
+    height: 220px;
+    position: relative;
+}
+
 .avatar-img {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    position: absolute;
+    top: -35px;
+}
+
+.bestofmont-card h2{
+    margin: 0;
+    padding: 0;
+}
+
+.bestofmont-card p{
+    text-align: center;
+}
+
+/* Final Banner section */
+
+.final-banner-section {
+    background-color: #8B48BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 224px;
+    color: white;
+
+}
+
+.final-banner-section h2 {
+    font-family: "Be Vietnam 700";
+    font-size: 40px;
+    letter-spacing: -0.2px;
+}
+
+.final-banner-section button {
+    background-color: white;
+    color:#8B48BF;
+    border: 0;
+    border-radius: 50px;
+    font-family: 13px;
+    width: 134px;
+    height: 44px;
 }
