@@ -1,35 +1,22 @@
-/*hacemos Flex al contenedor padre*/
+/*añadimos contexto al contenedor padre*/
 
 .contenedor-padre-nav-header {
-    display: flex;
-    box-sizing: border-box;
-    height: 70px;
-    justify-content: center;
-    background-color: #FFFFFF;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 70px;
+  justify-content: center;
+  background-color: #ffffff;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  
 }
 
-.nav-header-logo {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    height: 30px;
-    align-items: center;
-}
-
-.nav-logotipo {
-    display: flex;
-    background-repeat: no-repeat;
-    background-image: url(../img/logo.svg);
-    height: 30px;
-    width: 130px;
-    position: static;
-}
 
 /* Seccion Best of the Month*/
 
 .avatar-img {
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
 }
