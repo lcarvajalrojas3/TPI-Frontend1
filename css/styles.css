@@ -173,10 +173,47 @@ padding-left: 92px;
 
 /* Seccion Best of the Month*/
 
+.bestofmont-section {
+    padding: 80px;
+}
+
+.bestofmont-section h2 {
+    font-size: 39px;
+    font-family: "Be Vietnam 700";
+    text-align: center;
+    margin: 60px 0 60px 0;
+}
+
+.bestofmont-container {
+    display: flex;
+}
+
+.bestofmont-card {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    padding: 21px;
+    height: 220px;
+    position: relative;
+}
+
 .avatar-img {
     width: 70px;
     height: 70px;
     border-radius: 35px;
+    position: absolute;
+    top: -35px;
+}
+
+.bestofmont-card h2{
+    margin: 0;
+    padding: 0;
+}
+
+.bestofmont-card p{
+    text-align: center;
 }
 
 /* Final Banner section */
