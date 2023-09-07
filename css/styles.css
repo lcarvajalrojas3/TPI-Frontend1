@@ -161,14 +161,16 @@ padding-left: 92px;
 /* Seccion Best of the Month*/
 
 .bestofmont-section {
-    padding: 80px;
+    padding: 0 80px;
+    display:flex;
+    flex-direction: column;
 }
 
 .bestofmont-section h2 {
     font-size: 39px;
     font-family: "Be Vietnam 700";
     text-align: center;
-    margin: 60px 0 60px 0;
+    margin: 100px 0;
 }
 
 .bestofmont-container {
@@ -194,13 +196,30 @@ padding-left: 92px;
     top: -35px;
 }
 
-.bestofmont-card h2{
-    margin: 0;
+.bestofmont-card h3{
+    margin: 21px 0 21px 0;
     padding: 0;
+    font-size: 16px;
+    letter-spacing: -0.161px;
 }
 
 .bestofmont-card p{
+    color: #B9B9C1;
     text-align: center;
+    font-family: "Be Vietnam 500";
+    font-size: 16px;
+    line-height: 156.6%;
+}
+
+.bestofmont-section button {
+    margin: 45px auto 180px auto;
+    border-radius: 50px;
+    background: rgba(139, 72, 191, 0.70);
+    border:0;
+    color: white;
+    width: 134px;
+    height: 44px;
+    padding: 10px;
 }
 
 /* Final Banner section */
@@ -209,10 +228,9 @@ padding-left: 92px;
     background-color: #8B48BF;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 224px;
     color: white;
-
 }
 
 .final-banner-section h2 {
