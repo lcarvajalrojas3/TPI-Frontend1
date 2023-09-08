@@ -320,18 +320,24 @@ padding-left: 92px;
 
 @media screen and (max-width: 768px) {
 
-    /* PORTADA */
 
-    .portada-container {
+    /* PORTADA */
+    .portada-section, .portada-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding:0;
+        margin:0;
+    }
+
+    .portada-container {
         flex-direction: column;
-        padding: 64px auto;
+        width: 83%;
+        padding:0;
     }
     
     .portada-container img {
-        width: 83%;
+        width: 100%;
     }
     
     .portada-text-container {
@@ -351,7 +357,10 @@ padding-left: 92px;
     }
     
     h1 {
-        font-size: 50px;
+        margin-top:50px;
+        font-size: 10.5vw;
+        line-height: 114%; /* 57.3px */
+        letter-spacing: -0.36vw;
     }
     
     .portada-text-container p{
