@@ -43,6 +43,21 @@ header {
   transition: transform 0.3s ease; /* Agrega una transición para la animación */
 }
 
+/* CSS para el botón de contacto */
+
+.contact-button {
+  background-color: #8b48bf; /* Morado */
+  color: #fff; /* Letras blancas */
+  border: none;
+  border-radius: 50px; /* Botón en forma de píldora */
+  padding: 10px 20px; /* Ajusta el tamaño del botón según sea necesario */
+  margin-left: 10px; /* Espacio entre el menú y el botón */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Agrega una transición para la animación */
+}
+
+/* ANIMACIONES DEL HEADER/NAVBAR */
+
 /* Agrega estilos para la animación al pasar el mouse por encima */
 .nav-logotipo:hover {
   transform: scale(1.1); /* Aumenta el tamaño del logotipo en un 10% */
@@ -66,16 +81,10 @@ nav a {
   margin-right: 2%;
 }
 
-/* CSS para el botón de contacto */
-
-.contact-button {
-  background-color: #8b48bf; /* Morado */
-  color: #fff; /* Letras blancas */
-  border: none;
-  border-radius: 50px; /* Botón en forma de píldora */
-  padding: 10px 20px; /* Ajusta el tamaño del botón según sea necesario */
-  margin-left: 10px; /* Espacio entre el menú y el botón */
-  cursor: pointer;
+.contact-button:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño del BOTON de CONTACTO de la NAV-BAR en un 10% */
 }
 
 /* Portada */
@@ -298,121 +307,94 @@ h1 {
   height: 44px;
 }
 
-/* Estilos del footer */
+ /* Estilos del Footer */
 
 footer {
-    background-color: #1E1E26;
-    color: #FFFFFF;
-    padding: 20px;
-  }
-  
-  .footer-logo {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .footer-logo img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .footer-columns {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .footer-column {
-    flex: 1;
-    padding: 0 10px;
-  }
-  
-  .footer-column h4 {
-    font-size: 1.2em;
-  }
-  
-  .footer-column ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-column li {
-    margin-bottom: 5px;
-  }
+  background-color: #1e1e26;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Estilos del logotipo */
+.footer-logo {
+  text-align: left; /* Alinea el logotipo a la izquierda */
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos del contenido del footer */
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra horizontalmente los elementos en el contenido */
+}
+
+/* Estilos de los iconos */
+.footer-icons {
+  display: flex;
+  justify-content: center; /* Centra los iconos horizontalmente */
+  margin-bottom: 20px; /* Espacio entre los iconos y las columnas */
+}
+
+.footer-icon {
+  margin: 0 10px; /* Espacio entre los iconos */
+}
+
+/* Estilos de las columnas */
+.footer-columns {
+  display: flex;
+  justify-content: center; /* Centra las columnas horizontalmente */
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 10px;
+  text-align: center; /* Centra el contenido de las columnas */
+}
+
+.footer-column h4 {
+  font-size: 1.2em;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
 
 /* MEDIA QUERY*/
 
 @media screen and (max-width: 768px) {
   /* PORTADA */
 
+  /* PORTADA */
+  .portada-section,
+  .portada-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
 
-    /* PORTADA */
-    .portada-section, .portada-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding:0;
-        margin:0;
-    }
-
-    .portada-container {
-        flex-direction: column;
-        width: 83%;
-        padding:0;
-    }
-    
-    .portada-container img {
-        width: 100%;
-    }
-    
-    .portada-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        height: 399px;
-        margin-left:90px;
-    }
-    
-    h1,  .portada-text-container p{
-        text-align: right;
-        margin:0;
-        padding:0;
-        font-family: "Be Vietnam 700", sans-serif;
-    }
-    
-    h1 {
-        margin-top:50px;
-        font-size: 10.5vw;
-        line-height: 114%; /* 57.3px */
-        letter-spacing: -0.36vw;
-    }
-    
-    .portada-text-container p{
-        font-size: 16px;
-    }
-    
-    .portada-text-container button {
-        color: white;
-        background-color: #8B48BF;
-        border: 0;
-        border-radius: 50px;
-        padding:10px;
-        font-size: 13px;
-        width: 134px;
-        height: 44px
-    }
-
-    /**/
-    /**/
-    /**/
-    /**/
-    /**/
-    /**/
-    /**/
+  .portada-container {
+    flex-direction: column;
+    width: 83%;
+    padding: 0;
   }
 
   .portada-container img {
-    width: 83%;
+    width: 100%;
   }
 
   .portada-text-container {
@@ -433,7 +415,10 @@ footer {
   }
 
   h1 {
-    font-size: 50px;
+    margin-top: 50px;
+    font-size: 10.5vw;
+    line-height: 114%; /* 57.3px */
+    letter-spacing: -0.36vw;
   }
 
   .portada-text-container p {
@@ -458,4 +443,52 @@ footer {
   /**/
   /**/
   /**/
+}
 
+.portada-container img {
+  width: 83%;
+}
+
+.portada-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 399px;
+  margin-left: 90px;
+}
+
+h1,
+.portada-text-container p {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam 700", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.portada-text-container p {
+  font-size: 16px;
+}
+
+.portada-text-container button {
+  color: white;
+  background-color: #8b48bf;
+  border: 0;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 13px;
+  width: 134px;
+  height: 44px;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
