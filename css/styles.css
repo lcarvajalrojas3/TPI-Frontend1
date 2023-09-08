@@ -19,6 +19,8 @@
   font-family: "Be Vietnam 500", sans-serif;
 }
 
+
+
 /* Estilos del encabezado */
 
 header {
@@ -342,16 +344,20 @@ footer {
 /* MEDIA QUERY*/
 
 @media screen and (max-width: 768px) {
-  /* PORTADA */
+  
 
 
-    /* PORTADA */
+    /* PORTADA */ /*NOTA: ELIMINAR CSS SOBRANTE*/
     .portada-section, .portada-container {
         display: flex;
         justify-content: center;
         align-items: center;
         padding:0;
         margin:0;
+    }
+
+    .portada-section {
+        padding-top: 13.33vw;
     }
 
     .portada-container {
@@ -369,8 +375,9 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        height: 399px;
-        margin-left:90px;
+        margin:auto;
+        height: auto;
+        margin-bottom: 8.33vw;
     }
     
     h1,  .portada-text-container p{
@@ -381,7 +388,8 @@ footer {
     }
     
     h1 {
-        margin-top:50px;
+        color: #232C50;
+        margin-top:20.833vw;
         font-size: 10.5vw;
         line-height: 114%; /* 57.3px */
         letter-spacing: -0.36vw;
@@ -389,6 +397,9 @@ footer {
     
     .portada-text-container p{
         font-size: 16px;
+        margin: 28px 0;
+        line-height: 157.1%;
+        font-size: 3.43vw;
     }
     
     .portada-text-container button {
@@ -402,60 +413,147 @@ footer {
         height: 44px
     }
 
-    /**/
-    /**/
-    /**/
-    /**/
-    /**/
-    /**/
-    /**/
-  }
+    /* PRIMER BANNER */
 
-  .portada-container img {
-    width: 83%;
-  }
 
-  .portada-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 399px;
-    margin-left: 90px;
-  }
+    .midbanner-container {
+        background-color: #3CDDF3; 
+        height:auto;
+        padding: 8.33vw 4.16vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
 
-  h1,
-  .portada-text-container p {
-    text-align: right;
-    margin: 0;
-    padding: 0;
-    font-family: "Be Vietnam 700", sans-serif;
-  }
+    .midbanner-container h2 {
+        margin: 0 0 10.4vw 0;
+        line-height: 114.6%;
+        font-size: 7.5vw;
+    }
 
-  h1 {
-    font-size: 50px;
-  }
+      .midbanner-container p {
+        margin: 0;
+        font-size: 3.33vw;
+        line-height: 151.1%;
+    }
+    
+    /* Sección triple cuadros */
 
-  .portada-text-container p {
-    font-size: 16px;
-  }
+    .trescuadros-section {
+        height: auto;
+        padding: 13.54vw 0 7.29vw 7.08vw;
+        background-color: #FFF;
+    }
 
-  .portada-text-container button {
-    color: white;
-    background-color: #8b48bf;
-    border: 0;
-    border-radius: 50px;
-    padding: 10px;
-    font-size: 13px;
-    width: 134px;
-    height: 44px;
-  }
+    .trescuadros-container {
+        height: auto;
+        flex-direction: column;
+    }
 
-  /**/
-  /**/
-  /**/
-  /**/
-  /**/
-  /**/
-  /**/
+    .number-label {
+        display: inline-block;
+        border-radius: 30px;
+        font-family: "Be Vietnam 700";
+        line-height: 43px;
+        height: 43px;
+        width: 69px;
+        color: white;
+        margin-right: 0;
+    }
+
+    .cuadro-container div{
+        background-color: rgba(139, 72, 191, 0.30);
+        border-radius: 30px 0 0 30px;
+    }
+
+    .titulo-cuadro {
+        padding-left: 3.75vw;
+        color: #323851;
+    }
+
+    .cuadro-container p {
+        letter-spacing: -0.163px;
+        color: #b3b2b7;
+        padding: 2.08vw;
+        line-height: 156.6%;
+        margin: 4.375vw 3.75vw 4.375vw 0;
+    }
+
+    /* BEST OF MONTH SECTION */
+
+    .bestofmont-section {
+        padding: 0 3.75vw;
+    }
+      
+    .bestofmont-section h2 {
+        font-size: 39px;
+        font-family: "Be Vietnam 700";
+        text-align: center;
+        margin: 0 0 22.91vw 0;
+    }
+
+    .bestofmont-card {
+        height: auto;
+        padding:11.66vw 5.8vw 5.83vw 5.8vw;
+    }
+
+    .bestofmont-card h3{
+        height: auto;
+        margin: 0 0 3.958vw 0;
+    }
+
+    .hidden-card {
+        display: none;
+    }
+
+    .bestofmont-card p {
+        font-size: 3.333vw;
+    }
+
+    .bestofmont-section button {
+        background-color: #8B48BF;
+        height: 9.16vw;
+        width: 27.916vw;
+        font-size: 2.7vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2.5vw;
+        margin-bottom: 12.083vw;
+    }
+
+    /* BANNER FINAL */
+
+    .final-banner-section {
+        background-color: #3CDDF3;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 8.333vw 10.416vw ;
+      }
+      
+      .final-banner-section h2 {
+        width: 67.5vw;
+        text-align: center;
+        line-height: 119.6%;
+        font-size: 8.333vw;
+        letter-spacing: 0.25vw;
+        margin-bottom: 10.416vw;
+      }
+      
+      .final-banner-section button {
+        border-radius: 10.416vw;
+        color: white;
+        background-color: #232C50;
+        box-shadow: 0px 0.833vw 1.666vw 0px rgba(0, 0, 0, 0.25);
+        font-size: 2.71vw;
+        display: flex;
+        width: 27.916vw;
+        height: 9.1666vw;
+        padding: 2.083vw;
+        justify-content: center;
+        align-items: center;
+      }
+
+  }
 
