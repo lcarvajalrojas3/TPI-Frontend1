@@ -19,19 +19,80 @@
     font-family: "Be Vietnam 500", sans-serif;
 }
 
-/*hacemos Flex al contenedor padre*/
+/* Estilos del encabezado */
 
-.contenedor-padre-nav-header {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  height: 70px;
-  justify-content: center;
-  background-color: #ffffff;
-  background-image: url(../img/logo.svg);
-  background-repeat: no-repeat;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1% 2%;
+    color: #242E52;
+  }
   
-}
+  .nav-logotipo {
+    width: 15%;
+    height: auto;
+    display: block;
+    background-image: url('../img/logo.svg');
+    background-size: cover;
+    text-indent: -9999px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el menú */
+    flex-grow: 1; /* Permite que el menú ocupe el espacio restante */
+  }
+  
+  nav a {
+    color: #242E52;
+    text-decoration: none;
+    margin-right: 2%;
+  }
+
+  /* Estilos del menú con animación de luz dorada */
+
+nav {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el menú */
+    flex-grow: 1; /* Permite que el menú ocupe el espacio restante */
+    position: relative; /* Agregamos posición relativa para la animación de luz dorada */
+    z-index: 1; /* Asegura que el menú esté sobre la animación de luz dorada */
+  }
+  
+  nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 0%, rgba(255, 223, 186, 0.6) 50%, transparent 100%); /* Luz dorada */
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: -1; /* Coloca la animación detrás del menú */
+  }
+  
+  nav:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+
+  /* CSS para el botón de contacto */
+
+  .contact-button {
+    background-color: #8B48BF; /* Morado */
+    color: #fff; /* Letras blancas */
+    border: none;
+    border-radius: 50px; /* Botón en forma de píldora */
+    padding: 10px 20px; /* Ajusta el tamaño del botón según sea necesario */
+    margin-left: 10px; /* Espacio entre el menú y el botón */
+    cursor: pointer;
+  }
 
 
 /* Portada */
