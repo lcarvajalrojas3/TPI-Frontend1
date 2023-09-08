@@ -309,7 +309,7 @@ h1 {
   height: 44px;
 }
 
- /* Estilos del Footer */
+/* Estilos del Footer */
 
 footer {
   background-color: #1e1e26;
@@ -324,6 +324,7 @@ footer {
 .footer-logo {
   text-align: left; /* Alinea el logotipo a la izquierda */
   margin-bottom: 20px;
+  order: 0;
 }
 
 .footer-logo img {
@@ -331,28 +332,23 @@ footer {
   height: auto;
 }
 
-/* Estilos del contenido del footer */
-.footer-content {
-  display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente */
-  align-items: center; /* Centra horizontalmente los elementos en el contenido */
-}
-
 /* Estilos de los iconos */
 .footer-icons {
   display: flex;
-  justify-content: center; /* Centra los iconos horizontalmente */
+  justify-content:flex-start;
   margin-bottom: 20px; /* Espacio entre los iconos y las columnas */
+  order: 2; /* Cambia el orden para que aparezca después del logotipo */
 }
 
 .footer-icon {
   margin: 0 10px; /* Espacio entre los iconos */
 }
 
-/* Estilos de las columnas */
+/* Estilos del contenido del footer */
 .footer-columns {
   display: flex;
   justify-content: center; /* Centra las columnas horizontalmente */
+  order: 3; /* Cambia el orden para que aparezcan después de los iconos */
 }
 
 .footer-column {
