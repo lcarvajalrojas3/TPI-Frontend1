@@ -20,7 +20,6 @@
 }
 
 
-
 /* Estilos del encabezado */
 
 header {
@@ -95,11 +94,11 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0 100px 0;
+  padding: 6.944vw 0;
 }
 
 .portada-container img {
-  max-width: 540px;
+  width: 37.5vw;
 }
 
 .portada-text-container {
@@ -107,9 +106,9 @@ nav a {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 450px;
-  height: 399px;
-  margin-left: 90px;
+  width: 31.25vw;
+  height: 27.7777vw;
+  margin-left: 6.25vw;
 }
 
 h1,
@@ -117,26 +116,30 @@ h1,
   text-align: right;
   margin: 0;
   padding: 0;
-  font-family: "Be Vietnam 700", sans-serif;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3.47222vw;
+  font-family: "Be Vietnam 700";
+  color: #232C50;
+  line-height: 114.6%;
 }
 
 .portada-text-container p {
-  font-size: 16px;
+  font-size: 1.1111vw;
+  font-family: "Be Vietnam 500";
+  line-height: 157.1%;
 }
 
 .portada-text-container button {
   color: white;
   background-color: #8b48bf;
   border: 0;
-  border-radius: 50px;
-  padding: 10px;
-  font-size: 13px;
-  width: 134px;
-  height: 44px;
+  border-radius: 3.47222vw;
+  padding: 0.6944vw;
+  font-size: 0.9027vw;
+  width: 9.305vw;
+  height: 3.055vw;
 }
 
 /* Sección Banner intermedio */
@@ -144,88 +147,91 @@ h1 {
 .midbanner-container {
   background-color: #8b48bf;
   color: white;
-  height: 168px;
-  padding: 40px 0 40px 0;
+  height: 11.666vw;
+  padding: 2.7777vw 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .midbanner-container h2 {
-  max-width: 450px;
-  margin: 0 50px;
+  width: 31.25vw;
+  margin: 0 3.4722vw;
   font-family: "Be Vietnam 700";
-  font-size: 36px;
-  line-height: 41px;
+  font-size: 2.5vw;
+  line-height: 2.8472vw;
 }
 
 .midbanner-container p {
-  max-width: 450px;
-  margin: 0 50px;
-  font-size: 16px;
-  line-height: 24px;
+  width: 31.25vw;
+  margin: 0 3.4722vw;
+  font-size: 1.111vw;
+  line-height: 1.666vw;
 }
 
 /* Seccion triple-cuadros */
 
 .trescuadros-section {
   background-color: #fafafa;
-  padding: 40px 0;
+  padding: 2.777vw 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 428px;
+  height: 29.722vw;
 }
 
 .trescuadros-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 162px;
+  height: 11.25vw;
 }
 
 .cuadro-container {
-  max-width: 530px;
+  max-width: 36.805vw;
 }
 
 .number-label {
   display: inline-block;
   text-align: center;
   background-color: #8b48bf;
-  border-radius: 30px;
+  border-radius: 2.0833vw;
   font-family: "Be Vietnam 700";
-  line-height: 43px;
-  height: 43px;
-  width: 69px;
+  line-height: 2.98611vw;
+  height: 2.9861vw;
+  width: 4.7916vw;
   color: white;
-  margin-right: 23px;
+  margin-right: 1.5972vw;
+  font-size: 1.111vw;
 }
 
 .titulo-cuadro {
   color: #323851;
   font-family: "Be Vietnam 700";
-  letter-spacing: -0.24px;
+  letter-spacing: -0.0166vw;
+  font-size: 1.111vw;
 }
 
 .cuadro-container p {
-  letter-spacing: -0.163px;
+  letter-spacing: -0.0113194vw;
   color: #b3b2b7;
   padding-left: 92px;
+  font-size: 1.111vw;
 }
 
 /* Seccion Best of the Month*/
 
 .bestofmont-section {
-  padding: 0 80px;
+  padding: 0 5.5555vw;
   display: flex;
   flex-direction: column;
 }
 
 .bestofmont-section h2 {
-  font-size: 39px;
+  font-size: 2.7083vw;
   font-family: "Be Vietnam 700";
   text-align: center;
-  margin: 100px 0;
+  margin: 6.944vw 0;
 }
 
 .bestofmont-container {
@@ -238,23 +244,23 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
-  padding: 21px;
-  height: 220px;
+  padding: 1vw;
+  height: 15.277vw;
   position: relative;
 }
 
 .avatar-img {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
+  width: 4.8611vw;
+  height: 4.8611vw;
+  border-radius: 2.4305vw;
   position: absolute;
-  top: -35px;
+  top: -2.4305vw;
 }
 
 .bestofmont-card h3 {
-  margin: 21px 0 21px 0;
+  margin: 1.4583vw 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1.111vw;
   letter-spacing: -0.161px;
 }
 
@@ -262,19 +268,19 @@ h1 {
   color: #b9b9c1;
   text-align: center;
   font-family: "Be Vietnam 500";
-  font-size: 16px;
+  font-size: 1.111vw;
   line-height: 156.6%;
 }
 
 .bestofmont-section button {
-  margin: 45px auto 180px auto;
-  border-radius: 50px;
+  margin: 3.125vw auto 12.5vw auto;
+  border-radius: 3.4722vw;
   background: rgba(139, 72, 191, 0.7);
   border: 0;
   color: white;
-  width: 134px;
-  height: 44px;
-  padding: 10px;
+  width: 9.3055vw;
+  height: 3.0555vw;
+  padding: 0.6944vw;
 }
 
 /* Final Banner section */
@@ -375,23 +381,14 @@ footer {
 @media screen and (max-width: 768px) {
   
 
-  /* PORTADA */
-  .portada-section,
-  .portada-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
-    /* PORTADA */ /*NOTA: ELIMINAR CSS SOBRANTE*/
-    .portada-section, .portada-container {
+    /* PORTADA */
+    .portada-section,
+    .portada-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding:0;
-        margin:0;
+        padding: 0;
+        margin: 0;
     }
 
     .portada-section {
@@ -535,8 +532,17 @@ footer {
         padding:11.66vw 5.8vw 5.83vw 5.8vw;
     }
 
+    .avatar-img {
+        width: 14.583vw;
+        height: 14.583vw;
+        border-radius: 7.2916vw;
+        position: absolute;
+        top: -7.2916vw;
+      }
+
     .bestofmont-card h3{
         height: auto;
+        font-size: 3.33vw;
         margin: 0 0 3.958vw 0;
     }
 
