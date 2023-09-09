@@ -162,11 +162,15 @@ h1 {
   line-height: 2.8472vw;
 }
 
-.midbanner-container p {
+.texto1, .texto2 {
   width: 31.25vw;
   margin: 0 3.4722vw;
   font-size: 1.111vw;
   line-height: 1.666vw;
+}
+
+.texto2 {
+    display: none;
 }
 
 /* Seccion triple-cuadros */
@@ -188,7 +192,7 @@ h1 {
 }
 
 .cuadro-container {
-  max-width: 36.805vw;
+  width: 36.805vw;
 }
 
 .number-label {
@@ -215,7 +219,7 @@ h1 {
 .cuadro-container p {
   letter-spacing: -0.0113194vw;
   color: #b3b2b7;
-  padding-left: 92px;
+  padding-left: 6.388vw;
   font-size: 1.111vw;
 }
 
@@ -300,7 +304,7 @@ h1 {
   font-family: "Be Vietnam 700";
   font-size: 2.7777vw;
   letter-spacing: -0.01388vw;
-  max-width: 27.2916vw;
+  width: 27.2916vw;
   line-height: 120%;
   letter-spacing: -0.01388vw;
 }
@@ -411,7 +415,8 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        margin:auto;
+        width: 100%;
+        margin: auto;
         height: auto;
         margin-bottom: 8.33vw;
     }
@@ -465,12 +470,18 @@ footer {
         margin: 0 0 10.4vw 0;
         line-height: 114.6%;
         font-size: 7.5vw;
+        width: 100%;
     }
 
-      .midbanner-container p {
+    .texto1 {
+        display:none;
+    }
+    .texto2 {
+        display:block;
         margin: 0;
         font-size: 3.33vw;
         line-height: 151.1%;
+        width: 100%;
     }
     
     /* Sección triple cuadros */
@@ -488,13 +499,18 @@ footer {
 
     .number-label {
         display: inline-block;
-        border-radius: 30px;
+        border-radius: 6.25vw;
         font-family: "Be Vietnam 700";
-        line-height: 43px;
-        height: 43px;
-        width: 69px;
+        line-height: 8.9583vw;
+        height: 8.9583vw;
+        width: 14.375vw;
         color: white;
         margin-right: 0;
+        font-size: 3.333vw;
+    }
+
+    .cuadro-container {
+        width: 100%;
     }
 
     .cuadro-container div{
@@ -505,6 +521,7 @@ footer {
     .titulo-cuadro {
         padding-left: 3.75vw;
         color: #323851;
+        font-size: 3.333vw;
     }
 
     .cuadro-container p {
@@ -513,6 +530,7 @@ footer {
         padding: 2.08vw;
         line-height: 156.6%;
         margin: 4.375vw 3.75vw 4.375vw 0;
+        font-size: 3.333vw;
     }
 
     /* BEST OF MONTH SECTION */
@@ -522,7 +540,7 @@ footer {
     }
       
     .bestofmont-section h2 {
-        font-size: 39px;
+        font-size: 8.125vw;
         font-family: "Be Vietnam 700";
         text-align: center;
         margin: 0 0 22.91vw 0;
@@ -530,7 +548,7 @@ footer {
 
     .bestofmont-card {
         height: auto;
-        padding:11.66vw 5.8vw 5.83vw 5.8vw;
+        padding: 11.66vw 5.8vw 5.83vw 5.8vw;
     }
 
     .avatar-img {
@@ -563,7 +581,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 2.5vw;
+        padding-bottom: 1.8vw;
         margin-bottom: 12.083vw;
     }
 
