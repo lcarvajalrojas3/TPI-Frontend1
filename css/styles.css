@@ -35,8 +35,8 @@ header {
 }
 
 .nav-logotipo {
-  width: 8%;
-  height: 27px;
+  width: 7.5vw;
+  height: 1.73611vw;
   display: block;
   background-image: url("../img/logo.svg");
   background-size: cover;
@@ -86,6 +86,11 @@ nav a {
   transform: scale(
     1.1
   ); /* Aumenta el tamaño del BOTON de CONTACTO de la NAV-BAR en un 10% */
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
 }
 
 /* Portada */
@@ -385,6 +390,34 @@ footer {
 
 @media screen and (max-width: 768px) {
   
+    /* HEADER MÓVIL */
+
+    header {
+        margin-top: 6.3333vw;
+        padding: 2vw 11.666vw 2vw 11.666vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-logotipo {
+        width: 22.5vw;
+        height: 5.2083vw;
+        margin:0;
+    }
+
+    .navbar, .contact-button,
+    #nav-skip-to-main-content {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu img {
+        width: 12.5vw;
+        height: 12.5vw;
+    }
 
     /* PORTADA */
     .portada-section,
@@ -397,7 +430,7 @@ footer {
     }
 
     .portada-section {
-        padding-top: 13.33vw;
+        padding-top: 11.33vw;
     }
 
     .portada-container {
