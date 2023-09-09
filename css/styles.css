@@ -19,7 +19,6 @@
   font-family: "Be Vietnam 500", sans-serif;
 }
 
-
 /* Estilos del encabezado */
 
 header {
@@ -88,8 +87,8 @@ nav a {
 }
 
 .hamburger-menu {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 /* Portada */
@@ -125,7 +124,7 @@ h1,
 h1 {
   font-size: 3.47222vw;
   font-family: "Be Vietnam 700";
-  color: #232C50;
+  color: #232c50;
   line-height: 114.6%;
 }
 
@@ -166,7 +165,8 @@ h1 {
   line-height: 2.8472vw;
 }
 
-.texto1, .texto2 {
+.texto1,
+.texto2 {
   width: 31.25vw;
   margin: 0 3.4722vw;
   font-size: 1.111vw;
@@ -174,7 +174,7 @@ h1 {
 }
 
 .texto2 {
-    display: none;
+  display: none;
 }
 
 /* Seccion triple-cuadros */
@@ -301,7 +301,7 @@ h1 {
   justify-content: space-between;
   height: 15.5555vw;
   color: white;
-  padding: 4.444vw 14.5833vw 4.444vw 11.45833vw ;
+  padding: 4.444vw 14.5833vw 4.444vw 11.45833vw;
 }
 
 .final-banner-section h2 {
@@ -324,331 +324,397 @@ h1 {
   height: 3.555vw;
 }
 
-/* Estilos del Footer */
+/* Estilos del footer */
 
-footer {
-  background-color: #1e1e26;
-  color: #ffffff;
-  padding: 20px;
+.footer-main {
+  background-color: #1E1E26 ;
+}
+
+.footer-main .container {
+  padding: 2rem 10rem;
+}
+
+.footer-inner {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  padding: 2rem 0;
+  justify-content: center;
 }
 
-/* Estilos del logotipo */
-.footer-logo {
-  text-align: left; /* Alinea el logotipo a la izquierda */
-  margin-bottom: 20px;
-  order: 0;
-}
-
-.footer-logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Estilos de los iconos */
-.footer-icons {
+.footer-contain {
   display: flex;
-  justify-content:flex-start;
-  margin-bottom: 20px; /* Espacio entre los iconos y las columnas */
-  order: 2; /* Cambia el orden para que aparezca después del logotipo */
+  justify-content: space-between;
 }
 
-.footer-icon {
-  margin: 0 10px; /* Espacio entre los iconos */
-}
-
-/* Estilos del contenido del footer */
-.footer-columns {
+.footer-social {
   display: flex;
-  justify-content: center; /* Centra las columnas horizontalmente */
-  order: 3; /* Cambia el orden para que aparezcan después de los iconos */
+  flex-direction: column;
+  row-gap: 5rem;
+}
+.footer-social .social-icons {
+  /* border: 2px solid red; */
+  display: flex;
+  column-gap: 0.9rem;
 }
 
-.footer-column {
-  flex: 1;
-  padding: 0 10px;
-  text-align: center; /* Centra el contenido de las columnas */
+.footer-nav ul {
+  /* border: 2px solid red; */
+  columns: 2;
+  list-style: none;
+  column-gap: 7rem;
 }
 
-.footer-column h4 {
-  font-size: 1.2em;
+.footer-nav ul li {
+  margin-bottom: 0.75rem;
 }
 
-.footer-column ul {
-  list-style-type: none;
-  padding: 0;
+.footer-nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color:#FFF;
+  text-decoration: none;
 }
 
-.footer-column li {
-  margin-bottom: 5px;
+.footer-form form input,
+ .footer-form form button {
+  border: none;
+  border-radius: 50px;
+}
+
+.footer-form form input {
+  /* border: 2px solid red; */
+  width: 308px;
+  height: 44px;
+  font-size: 13.18px;
+  font-weight: 600;
+  padding: 12.5px 0 10px 12.5px;
+  color: #A0A0A0;
+}
+
+.footer-form form button {
+  color: #FFF;
+  font-size: 13.18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #8b48bf;
+  margin-left: 9px;
+  
+}
+
+.footer-copyright {
+  text-align: right;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #8C8C94;
 }
 
 /* MEDIA QUERY*/
 
 @media screen and (max-width: 768px) {
+  /* HEADER MÓVIL */
+
+  header {
+    margin-top: 6.3333vw;
+    padding: 2vw 11.666vw 2vw 11.666vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-logotipo {
+    width: 22.5vw;
+    height: 5.2083vw;
+    margin: 0;
+  }
+
+  .navbar,
+  .contact-button,
+  #nav-skip-to-main-content {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu img {
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+
+  /* PORTADA */
+  .portada-section,
+  .portada-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .portada-section {
+    padding-top: 11.33vw;
+  }
+
+  .portada-container {
+    flex-direction: column;
+    width: 83%;
+    padding: 0;
+  }
+
+  .portada-container img {
+    width: 100%;
+  }
+
+  .portada-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 8.33vw;
+  }
+
+  h1,
+  .portada-text-container p {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-family: "Be Vietnam 700", sans-serif;
+  }
+
+  h1 {
+    color: #232c50;
+    margin-top: 20.833vw;
+    font-size: 10.5vw;
+    line-height: 114%; /* 57.3px */
+    letter-spacing: -0.36vw;
+  }
+
+  .portada-text-container p {
+    font-size: 16px;
+    margin: 28px 0;
+    line-height: 157.1%;
+    font-size: 3.43vw;
+  }
+
+  .portada-text-container button {
+    color: white;
+    background-color: #8b48bf;
+    border: 0;
+    border-radius: 10.416vw;
+    padding: 2.0833vw;
+    font-size: 2.70833vw;
+    width: 27.9166vw;
+    height: 9.166vw;
+  }
+
+  /* PRIMER BANNER */
+
+  .midbanner-container {
+    background-color: #3cddf3;
+    height: auto;
+    padding: 8.33vw 4.16vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .midbanner-container h2 {
+    margin: 0 0 10.4vw 0;
+    line-height: 114.6%;
+    font-size: 7.5vw;
+    width: 100%;
+  }
+
+  .texto1 {
+    display: none;
+  }
+  .texto2 {
+    display: block;
+    margin: 0;
+    font-size: 3.33vw;
+    line-height: 151.1%;
+    width: 100%;
+  }
+
+  /* Sección triple cuadros */
+
+  .trescuadros-section {
+    height: auto;
+    padding: 13.54vw 0 7.29vw 7.08vw;
+    background-color: #fff;
+  }
+
+  .trescuadros-container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .number-label {
+    display: inline-block;
+    border-radius: 6.25vw;
+    font-family: "Be Vietnam 700";
+    line-height: 8.9583vw;
+    height: 8.9583vw;
+    width: 14.375vw;
+    color: white;
+    margin-right: 0;
+    font-size: 3.333vw;
+  }
+
+  .cuadro-container {
+    width: 100%;
+  }
+
+  .cuadro-container div {
+    background-color: rgba(139, 72, 191, 0.3);
+    border-radius: 30px 0 0 30px;
+  }
+
+  .titulo-cuadro {
+    padding-left: 3.75vw;
+    color: #323851;
+    font-size: 3.333vw;
+  }
+
+  .cuadro-container p {
+    letter-spacing: -0.163px;
+    color: #b3b2b7;
+    padding: 2.08vw;
+    line-height: 156.6%;
+    margin: 4.375vw 3.75vw 4.375vw 0;
+    font-size: 3.333vw;
+  }
+
+  /* BEST OF MONTH SECTION */
+
+  .bestofmont-section {
+    padding: 0 3.75vw;
+  }
+
+  .bestofmont-section h2 {
+    font-size: 8.125vw;
+    font-family: "Be Vietnam 700";
+    text-align: center;
+    margin: 0 0 22.91vw 0;
+  }
+
+  .bestofmont-card {
+    height: auto;
+    padding: 11.66vw 5.8vw 5.83vw 5.8vw;
+  }
+
+  .avatar-img {
+    width: 14.583vw;
+    height: 14.583vw;
+    border-radius: 7.2916vw;
+    position: absolute;
+    top: -7.2916vw;
+  }
+
+  .bestofmont-card h3 {
+    height: auto;
+    font-size: 3.33vw;
+    margin: 0 0 3.958vw 0;
+  }
+
+  .hidden-card {
+    display: none;
+  }
+
+  .bestofmont-card p {
+    font-size: 3.333vw;
+  }
+
+  .bestofmont-section button {
+    background-color: #8b48bf;
+    height: 9.16vw;
+    width: 27.916vw;
+    font-size: 2.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.8vw;
+    margin-bottom: 12.083vw;
+  }
+
+  /* BANNER FINAL */
+
+  .final-banner-section {
+    background-color: #3cddf3;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 8.333vw 10.416vw;
+  }
+
+  .final-banner-section h2 {
+    width: 67.5vw;
+    text-align: center;
+    line-height: 119.6%;
+    font-size: 8.333vw;
+    letter-spacing: 0.25vw;
+    margin-bottom: 10.416vw;
+  }
+
+  .final-banner-section button {
+    border-radius: 10.416vw;
+    color: white;
+    background-color: #232c50;
+    box-shadow: 0px 0.833vw 1.666vw 0px rgba(0, 0, 0, 0.25);
+    font-size: 2.71vw;
+    display: flex;
+    width: 27.916vw;
+    height: 9.1666vw;
+    padding: 2.083vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ESTILOS FOOTER MOBILE */
+
+  .footer-contain {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .footer-social {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .footer-social .footer-logo {
+    width: 107px;
+    height: 28px;
+    object-fit: contain;
+    align-self: center;
+    margin-top: -3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-icons {
+    justify-content: space-between;
+    width: 350px;
+  }
+
   
-    /* HEADER MÓVIL */
 
-    header {
-        margin-top: 6.3333vw;
-        padding: 2vw 11.666vw 2vw 11.666vw;
-        display: flex;
-        justify-content: space-between;
-    }
+  .footer-form form {
+    display: flex;
+  }
 
-    .nav-logotipo {
-        width: 22.5vw;
-        height: 5.2083vw;
-        margin:0;
-    }
+  .footer-form form input {
+    width: 301px ;
+  }
 
-    .navbar, .contact-button,
-    #nav-skip-to-main-content {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .hamburger-menu img {
-        width: 12.5vw;
-        height: 12.5vw;
-    }
-
-    /* PORTADA */
-    .portada-section,
-    .portada-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .portada-section {
-        padding-top: 11.33vw;
-    }
-
-    .portada-container {
-        flex-direction: column;
-        width: 83%;
-        padding:0;
-    }
-    
-    .portada-container img {
-        width: 100%;
-    }
-    
-    .portada-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 100%;
-        margin: auto;
-        height: auto;
-        margin-bottom: 8.33vw;
-    }
-    
-    h1,  .portada-text-container p{
-        text-align: right;
-        margin:0;
-        padding:0;
-        font-family: "Be Vietnam 700", sans-serif;
-    }
-    
-    h1 {
-        color: #232C50;
-        margin-top:20.833vw;
-        font-size: 10.5vw;
-        line-height: 114%; /* 57.3px */
-        letter-spacing: -0.36vw;
-    }
-    
-    .portada-text-container p{
-        font-size: 16px;
-        margin: 28px 0;
-        line-height: 157.1%;
-        font-size: 3.43vw;
-    }
-    
-    .portada-text-container button {
-        color: white;
-        background-color: #8B48BF;
-        border: 0;
-        border-radius: 10.416vw;
-        padding: 2.0833vw;
-        font-size: 2.70833vw;
-        width: 27.9166vw;
-        height: 9.166vw;
-    }
-
-    /* PRIMER BANNER */
-
-
-    .midbanner-container {
-        background-color: #3CDDF3; 
-        height:auto;
-        padding: 8.33vw 4.16vw;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start
-    }
-
-    .midbanner-container h2 {
-        margin: 0 0 10.4vw 0;
-        line-height: 114.6%;
-        font-size: 7.5vw;
-        width: 100%;
-    }
-
-    .texto1 {
-        display:none;
-    }
-    .texto2 {
-        display:block;
-        margin: 0;
-        font-size: 3.33vw;
-        line-height: 151.1%;
-        width: 100%;
-    }
-    
-    /* Sección triple cuadros */
-
-    .trescuadros-section {
-        height: auto;
-        padding: 13.54vw 0 7.29vw 7.08vw;
-        background-color: #FFF;
-    }
-
-    .trescuadros-container {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .number-label {
-        display: inline-block;
-        border-radius: 6.25vw;
-        font-family: "Be Vietnam 700";
-        line-height: 8.9583vw;
-        height: 8.9583vw;
-        width: 14.375vw;
-        color: white;
-        margin-right: 0;
-        font-size: 3.333vw;
-    }
-
-    .cuadro-container {
-        width: 100%;
-    }
-
-    .cuadro-container div{
-        background-color: rgba(139, 72, 191, 0.30);
-        border-radius: 30px 0 0 30px;
-    }
-
-    .titulo-cuadro {
-        padding-left: 3.75vw;
-        color: #323851;
-        font-size: 3.333vw;
-    }
-
-    .cuadro-container p {
-        letter-spacing: -0.163px;
-        color: #b3b2b7;
-        padding: 2.08vw;
-        line-height: 156.6%;
-        margin: 4.375vw 3.75vw 4.375vw 0;
-        font-size: 3.333vw;
-    }
-
-    /* BEST OF MONTH SECTION */
-
-    .bestofmont-section {
-        padding: 0 3.75vw;
-    }
-      
-    .bestofmont-section h2 {
-        font-size: 8.125vw;
-        font-family: "Be Vietnam 700";
-        text-align: center;
-        margin: 0 0 22.91vw 0;
-    }
-
-    .bestofmont-card {
-        height: auto;
-        padding: 11.66vw 5.8vw 5.83vw 5.8vw;
-    }
-
-    .avatar-img {
-        width: 14.583vw;
-        height: 14.583vw;
-        border-radius: 7.2916vw;
-        position: absolute;
-        top: -7.2916vw;
-      }
-
-    .bestofmont-card h3{
-        height: auto;
-        font-size: 3.33vw;
-        margin: 0 0 3.958vw 0;
-    }
-
-    .hidden-card {
-        display: none;
-    }
-
-    .bestofmont-card p {
-        font-size: 3.333vw;
-    }
-
-    .bestofmont-section button {
-        background-color: #8B48BF;
-        height: 9.16vw;
-        width: 27.916vw;
-        font-size: 2.7vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 1.8vw;
-        margin-bottom: 12.083vw;
-    }
-
-    /* BANNER FINAL */
-
-    .final-banner-section {
-        background-color: #3CDDF3;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        padding: 8.333vw 10.416vw ;
-      }
-      
-      .final-banner-section h2 {
-        width: 67.5vw;
-        text-align: center;
-        line-height: 119.6%;
-        font-size: 8.333vw;
-        letter-spacing: 0.25vw;
-        margin-bottom: 10.416vw;
-      }
-      
-      .final-banner-section button {
-        border-radius: 10.416vw;
-        color: white;
-        background-color: #232C50;
-        box-shadow: 0px 0.833vw 1.666vw 0px rgba(0, 0, 0, 0.25);
-        font-size: 2.71vw;
-        display: flex;
-        width: 27.916vw;
-        height: 9.1666vw;
-        padding: 2.083vw;
-        justify-content: center;
-        align-items: center;
-      }
+  .footer-copyright {
+    align-self: center;
+    width: 30ch;
 
   }
+}
+
 
