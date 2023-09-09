@@ -35,12 +35,11 @@ header {
 }
 
 .nav-logotipo {
-  width: 8%;
-  height: 27px;
+  width: 7.5vw;
+  height: 1.73611vw;
   display: block;
   background-image: url("../img/logo.svg");
   background-size: cover;
-  text-indent: -9999px;
   transition: transform 0.3s ease; /* Agrega una transición para la animación */
 }
 
@@ -86,6 +85,11 @@ nav a {
   transform: scale(
     1.1
   ); /* Aumenta el tamaño del BOTON de CONTACTO de la NAV-BAR en un 10% */
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
 }
 
 /* Portada */
@@ -162,11 +166,15 @@ h1 {
   line-height: 2.8472vw;
 }
 
-.midbanner-container p {
+.texto1, .texto2 {
   width: 31.25vw;
   margin: 0 3.4722vw;
   font-size: 1.111vw;
   line-height: 1.666vw;
+}
+
+.texto2 {
+    display: none;
 }
 
 /* Seccion triple-cuadros */
@@ -188,7 +196,7 @@ h1 {
 }
 
 .cuadro-container {
-  max-width: 36.805vw;
+  width: 36.805vw;
 }
 
 .number-label {
@@ -215,7 +223,7 @@ h1 {
 .cuadro-container p {
   letter-spacing: -0.0113194vw;
   color: #b3b2b7;
-  padding-left: 92px;
+  padding-left: 6.388vw;
   font-size: 1.111vw;
 }
 
@@ -281,6 +289,7 @@ h1 {
   width: 9.3055vw;
   height: 3.0555vw;
   padding: 0.6944vw;
+  font-size: 0.90277vw;
 }
 
 /* Final Banner section */
@@ -290,18 +299,18 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 224px;
+  height: 15.5555vw;
   color: white;
-  padding: 64px 165px;
+  padding: 4.444vw 14.5833vw 4.444vw 11.45833vw ;
 }
 
 .final-banner-section h2 {
   font-family: "Be Vietnam 700";
-  font-size: 40px;
-  letter-spacing: -0.2px;
-  max-width: 393px;
+  font-size: 2.7777vw;
+  letter-spacing: -0.01388vw;
+  width: 27.2916vw;
   line-height: 120%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.01388vw;
 }
 
 .final-banner-section button {
@@ -309,10 +318,10 @@ h1 {
   font-family: "Be Vietnam 500";
   color: #8b48bf;
   border: 0;
-  border-radius: 50px;
-  font-family: 13px;
-  width: 134px;
-  height: 44px;
+  border-radius: 3.472vw;
+  font-size: 0.9027vw;
+  width: 9.3055vw;
+  height: 3.555vw;
 }
 
 /* Estilos del Footer */
@@ -380,6 +389,34 @@ footer {
 
 @media screen and (max-width: 768px) {
   
+    /* HEADER MÓVIL */
+
+    header {
+        margin-top: 6.3333vw;
+        padding: 2vw 11.666vw 2vw 11.666vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-logotipo {
+        width: 22.5vw;
+        height: 5.2083vw;
+        margin:0;
+    }
+
+    .navbar, .contact-button,
+    #nav-skip-to-main-content {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu img {
+        width: 12.5vw;
+        height: 12.5vw;
+    }
 
     /* PORTADA */
     .portada-section,
@@ -392,7 +429,7 @@ footer {
     }
 
     .portada-section {
-        padding-top: 13.33vw;
+        padding-top: 11.33vw;
     }
 
     .portada-container {
@@ -410,7 +447,8 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        margin:auto;
+        width: 100%;
+        margin: auto;
         height: auto;
         margin-bottom: 8.33vw;
     }
@@ -441,11 +479,11 @@ footer {
         color: white;
         background-color: #8B48BF;
         border: 0;
-        border-radius: 50px;
-        padding:10px;
-        font-size: 13px;
-        width: 134px;
-        height: 44px
+        border-radius: 10.416vw;
+        padding: 2.0833vw;
+        font-size: 2.70833vw;
+        width: 27.9166vw;
+        height: 9.166vw;
     }
 
     /* PRIMER BANNER */
@@ -464,12 +502,18 @@ footer {
         margin: 0 0 10.4vw 0;
         line-height: 114.6%;
         font-size: 7.5vw;
+        width: 100%;
     }
 
-      .midbanner-container p {
+    .texto1 {
+        display:none;
+    }
+    .texto2 {
+        display:block;
         margin: 0;
         font-size: 3.33vw;
         line-height: 151.1%;
+        width: 100%;
     }
     
     /* Sección triple cuadros */
@@ -487,13 +531,18 @@ footer {
 
     .number-label {
         display: inline-block;
-        border-radius: 30px;
+        border-radius: 6.25vw;
         font-family: "Be Vietnam 700";
-        line-height: 43px;
-        height: 43px;
-        width: 69px;
+        line-height: 8.9583vw;
+        height: 8.9583vw;
+        width: 14.375vw;
         color: white;
         margin-right: 0;
+        font-size: 3.333vw;
+    }
+
+    .cuadro-container {
+        width: 100%;
     }
 
     .cuadro-container div{
@@ -504,6 +553,7 @@ footer {
     .titulo-cuadro {
         padding-left: 3.75vw;
         color: #323851;
+        font-size: 3.333vw;
     }
 
     .cuadro-container p {
@@ -512,6 +562,7 @@ footer {
         padding: 2.08vw;
         line-height: 156.6%;
         margin: 4.375vw 3.75vw 4.375vw 0;
+        font-size: 3.333vw;
     }
 
     /* BEST OF MONTH SECTION */
@@ -521,7 +572,7 @@ footer {
     }
       
     .bestofmont-section h2 {
-        font-size: 39px;
+        font-size: 8.125vw;
         font-family: "Be Vietnam 700";
         text-align: center;
         margin: 0 0 22.91vw 0;
@@ -529,7 +580,7 @@ footer {
 
     .bestofmont-card {
         height: auto;
-        padding:11.66vw 5.8vw 5.83vw 5.8vw;
+        padding: 11.66vw 5.8vw 5.83vw 5.8vw;
     }
 
     .avatar-img {
@@ -562,7 +613,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 2.5vw;
+        padding-bottom: 1.8vw;
         margin-bottom: 12.083vw;
     }
 
