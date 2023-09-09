@@ -281,6 +281,7 @@ h1 {
   width: 9.3055vw;
   height: 3.0555vw;
   padding: 0.6944vw;
+  font-size: 0.90277vw;
 }
 
 /* Final Banner section */
@@ -290,18 +291,18 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 224px;
+  height: 15.5555vw;
   color: white;
-  padding: 64px 165px;
+  padding: 4.444vw 14.5833vw 4.444vw 11.45833vw ;
 }
 
 .final-banner-section h2 {
   font-family: "Be Vietnam 700";
-  font-size: 40px;
-  letter-spacing: -0.2px;
-  max-width: 393px;
+  font-size: 2.7777vw;
+  letter-spacing: -0.01388vw;
+  max-width: 27.2916vw;
   line-height: 120%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.01388vw;
 }
 
 .final-banner-section button {
@@ -309,10 +310,10 @@ h1 {
   font-family: "Be Vietnam 500";
   color: #8b48bf;
   border: 0;
-  border-radius: 50px;
-  font-family: 13px;
-  width: 134px;
-  height: 44px;
+  border-radius: 3.472vw;
+  font-size: 0.9027vw;
+  width: 9.3055vw;
+  height: 3.555vw;
 }
 
 /* Estilos del Footer */
