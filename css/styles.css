@@ -40,7 +40,6 @@ header {
   display: block;
   background-image: url("../img/logo.svg");
   background-size: cover;
-  text-indent: -9999px;
   transition: transform 0.3s ease; /* Agrega una transición para la animación */
 }
 
